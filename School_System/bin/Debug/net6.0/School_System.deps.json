@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "School_System/1.0.0": {
+        "dependencies": {
+          "Application_layer": "1.0.0"
+        },
+        "runtime": {
+          "School_System.dll": {}
+        }
+      },
+      "Application_layer/1.0.0": {
+        "runtime": {
+          "Application_layer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "School_System/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Application_layer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

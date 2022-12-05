@@ -1,0 +1,12 @@
+C:\programowanie\projekty_C#\School_System\Application_layer\bin\Debug\net6.0\Application_layer.deps.json
+C:\programowanie\projekty_C#\School_System\Application_layer\bin\Debug\net6.0\Application_layer.dll
+C:\programowanie\projekty_C#\School_System\Application_layer\bin\Debug\net6.0\Application_layer.pdb
+C:\programowanie\projekty_C#\School_System\Application_layer\obj\Debug\net6.0\Application_layer.csproj.AssemblyReference.cache
+C:\programowanie\projekty_C#\School_System\Application_layer\obj\Debug\net6.0\Application_layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\programowanie\projekty_C#\School_System\Application_layer\obj\Debug\net6.0\Application_layer.AssemblyInfoInputs.cache
+C:\programowanie\projekty_C#\School_System\Application_layer\obj\Debug\net6.0\Application_layer.AssemblyInfo.cs
+C:\programowanie\projekty_C#\School_System\Application_layer\obj\Debug\net6.0\Application_layer.csproj.CoreCompileInputs.cache
+C:\programowanie\projekty_C#\School_System\Application_layer\obj\Debug\net6.0\Application_layer.dll
+C:\programowanie\projekty_C#\School_System\Application_layer\obj\Debug\net6.0\refint\Application_layer.dll
+C:\programowanie\projekty_C#\School_System\Application_layer\obj\Debug\net6.0\Application_layer.pdb
+C:\programowanie\projekty_C#\School_System\Application_layer\obj\Debug\net6.0\ref\Application_layer.dll
