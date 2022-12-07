@@ -10,10 +10,18 @@ namespace Application_layer.Entities
 {
     public sealed class Teacher : Person, ISystemUser
     {
-        public int Expirience { get; set; } 
-        public Subject Subject { get; set; }
-        public List<Student> students { get; set; } = new List<Student>();
+        public int Expirience { get;private set; } 
+        public Subject Subject { get; private set; }
+        public List<Student> students { get;private set; } = new List<Student>();
 
+        public Teacher()
+        {
+
+        }
+        public Teacher(string name, string lastname, Subject subject) : base(name,lastname)
+        {
+            Subject = subject;
+        }
         public override void Output()
         {
             Console.WriteLine($"Teacher: {Name} {LastName}. Subject {Subject}.");

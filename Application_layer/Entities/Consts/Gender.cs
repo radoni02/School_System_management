@@ -8,7 +8,7 @@ namespace Application_layer.Entities.Consts
 {
     public enum Gender
     {
-        male,
-        female
+        Male = 0,
+        Female = 1,
     }
 }

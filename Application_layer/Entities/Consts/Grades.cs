@@ -9,14 +9,14 @@ namespace Application_layer.Entities.Consts
 {
     public class Grades
     {
-        public string Description { get; init; }
+        public string Description { get; private set; }
         
-        //[Range(1,6,ErrorMessage ="Grade have to be between 1 to 6.")]
-        public double Grade { get; set; }
+        public double Grade { get; private set; }
 
         public Grades(string description,double grade)
         {
             Description = description;
+            //[Range(1,6,ErrorMessage ="Grade have to be between 1 to 6.")]
             Grade = grade;
         }
     }

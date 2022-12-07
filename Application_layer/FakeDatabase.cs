@@ -21,11 +21,10 @@ namespace Application_layer
         }
         public void FillListWithDefaultStudents()
         {
-            
-            Student student1 = new Student() { Name = "James", LastName = "Lenon", Pesel = "12312312312", Gender = Gender.male, Address = "Los Santos", Average = 0 };
-            Student student2 = new Student() { Name = "Tim", LastName = "Cory", Pesel = "92837459213", Gender = Gender.male, Address = "Chicago", Average = 0};
-            Student student3 = new Student() { Name = "Anna", LastName = "Covincton", Pesel = "18364018342", Gender = Gender.female, Address = "Dallas", Average = 0 };
-            Student student4 = new Student() { Name = "Sara", LastName = "James", Pesel = "99999999999", Gender = Gender.female, Address = "New York", Average = 0};
+            Student student1 = new Student("James","Lenon",0,Gender.Male,"Los Santos");
+            Student student2 = new Student("Tim", "Cory", 0,Gender.Male, "Chicago");
+            Student student3 = new Student("Anna", "Covincton", 0,Gender.Female, "Dallas");
+            Student student4 = new Student("Sara", "James", 0,Gender.Female, "New York");
             students.Add(student1);
             students.Add(student2);
             students.Add(student3);
@@ -38,7 +37,7 @@ namespace Application_layer
         }
         public void FillListWithDefaultTeachers()
         {
-            Teacher teacher1 =  new Teacher { Name = "Joe", LastName = "Mama", Expirience = 5, Subject = Subject.Math };
+            Teacher teacher1 = new Teacher("Joe", "Mama", Subject.Math);
             teachers.Add(teacher1);
             systemUsers.Add(teacher1);
 
@@ -46,13 +45,11 @@ namespace Application_layer
 
 
 
-        public /*List<ISystemUser>*/void AddNewStudent(Student student)
+        public void AddNewStudent(Student student)
         {
-            Student student1 = new Student() { Name = student.Name, LastName = student.LastName };
+            Student student1 = new Student(student.Name, student.LastName); 
             students.Add(student1);
             systemUsers.Add(student1);
-            //systemUsers.Add(new Student() { Name = student.Name, LastName = student.LastName });
-            //return systemUsers;
         }
        
 

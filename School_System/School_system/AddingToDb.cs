@@ -13,14 +13,13 @@ namespace School_System.School_system
         public Student AddStudentToDatabase() 
         {
             Console.WriteLine("Please enter new student credentials:");
-            Student newStudent = new Student();
-            newStudent.Name = Console.ReadLine();
-            newStudent.LastName = Console.ReadLine();
-            return newStudent;
-            //CheckIfStudentExistInDb(newStudent.Name, newStudent.LastName,students);
+            var name = Console.ReadLine();
+            var lastName = Console.ReadLine();
+            Student student = new Student(name,lastName);  //there should be check if student already exist in db
+           return student;
         }
 
-        public Teacher AddTeacherToDatabase()   // do zaimplementowania
+        public Teacher AddTeacherToDatabase()   // to implement
         {
             throw new NotImplementedException();
         }

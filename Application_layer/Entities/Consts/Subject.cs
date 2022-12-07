@@ -8,11 +8,11 @@ namespace Application_layer.Entities.Consts
 {
     public enum Subject
     {
-        Math,
-        Science,
-        English,
-        Histry,
-        Geography
+        Math = 0,
+        Science = 1,
+        English = 2,
+        Histry = 3,
+        Geography = 4
 
     }
 }

@@ -13,8 +13,9 @@ namespace School_System.School_system
         public void AddGradesFromOralAnswer(Student student)
         {   
             double grade = Convert.ToDouble(Console.ReadLine());
-            student.Average = (student.Average + grade) / (student.grades.Count + 1);
-            student.grades.Add(new Application_layer.Entities.Consts.Grades("Oral Answer:", grade));
+            //student.Average = (student.Average + grade) / (student.grades.Count + 1);
+            student.CalculateAverageFromOralAnswer(grade);
+            student.AddNewGrade("Oral Answer", grade);
         }
         public void AddGradesFromExam(Teacher teacher)
         {
@@ -22,8 +23,8 @@ namespace School_System.School_system
             foreach (var x in teacher.students)
             {
                 grade = Convert.ToDouble(Console.ReadLine());
-                x.grades.Add(new Application_layer.Entities.Consts.Grades("Exam", grade));
-                x.CalculateAverage();
+                x.AddNewGrade("Exam", grade);
+                x.CalculateAverageFromExam();
             }
         }
     }
